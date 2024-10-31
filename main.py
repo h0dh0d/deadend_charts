@@ -138,6 +138,10 @@ def fetch_data():
             # Add a delay after each request
             print(f"    Waiting for 10 seconds before the next request...")
             time.sleep(10)  # Sleep for 10 seconds
+            
+        # Add a delay after processing each currency
+        print(f"Finished processing {currency}. Waiting for 60 seconds before the next currency...")
+        time.sleep(60)  # Sleep for 60 seconds
 
 if __name__ == '__main__':
     fetch_data()
